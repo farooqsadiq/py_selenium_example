@@ -1,0 +1,19 @@
+# Git will not manage these files
+# You can put some of these in global ~/.gitignore
+
+# ignores for python
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# ignore the virtual environment
+venv/
+# ignore selenium logs
+*.log
+# ignore local environment variable - used in future
+.env
+# remove the vscode config
+.vscode
+# MacOSX
+.DS_Store
