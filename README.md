@@ -5,12 +5,28 @@ Install the selenium driver for firefox
 brew install geckodriver
 ```
 
-## Setting up a new python project
+## Clone project and run
+
+```
+git clone https://github.com/farooqsadiq/py_selenium_example.git 
+cd py_selenium_example
+
+python3 -m venv venv
+source ./venv/bin/activate
+python -m pip install -r requirements.txt
+
+python src/main.py
+```
+
+The next section explains some of the above commands.
+
+## Starting the project from scratch
 
 Create a directory for your project
 ```
 mkdir selenium-example
 cd selenium-example
+python -m pip install --upgrade pip
 ```
 
 Use your default python3 installation to create a new python virtual environment directory called venv. This will isolates python external modules.
@@ -69,3 +85,24 @@ if __name__ == "__main__":
 EOF
 ```
 
+Run the project
+```
+python src/main.py
+```
+
+Modify the project to use selenium, run, test, and repeat.
+
+Initialize the git reporitory, add a gitignore, and checkin the code. Create the remote repo first.
+```
+git init
+git add \
+    .gitignore \
+    README.md \
+    data \
+    requirements.txt \
+    src 
+
+git commit -m "Initial Commit"
+git remote add origin https://github.com/farooqsadiq/py_selenium_example.git
+git branch -M main
+git push -u origin main
